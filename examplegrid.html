@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID EXERCISES 1</title>
+    <style>
+        body {
+            margin: 40px;
+
+        }
+
+        .grid-container {
+            display: grid;
+            padding: 20px;
+            grid-template-columns: auto auto auto auto;
+            background-color: cadetblue;
+            grid-column-gap: 20px;
+
+        }
+
+        .grid-item {
+            background-color: aquamarine;
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .grid1 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            margin-bottom: 20px;
+        }
+
+        .grid2 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .grid3 {
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+
+        .grid4 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .grid5 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item ,grid1">header</div>
+        <div class="grid-item grid2">sidebar</div>
+        <div class="grid-item grid3">Content<br> More content than we had before so this column is now quite tall.</div>
+        <div class="grid-item grid4">sidebar2</div>
+        <div class="grid-item grid5">footer</div>
+    </div>
+    <div> this is sol</div>
+
+</body>
+
+</html>
